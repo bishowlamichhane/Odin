@@ -1,0 +1,77 @@
+.wrapper{
+    position: relative;
+    height: 100vh;
+}
+
+.container{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 500px;
+    width: 80%;
+    display: flex;
+
+
+}
+.leftContainer{
+    width: calc(100% - 30%);
+    height: 100%;
+    
+    
+}
+
+.rightContainer{
+    width: 30%;
+    border-left: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.leftContainer .contentContainer{
+    width: 50%;
+    border: 1px solid black;
+    
+    margin: 20px auto;
+    height: 90%;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+}
+
+.contentContainer form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.contentContainer button{
+    display: flex;
+    
+    align-self: flex-end;
+}
+
+.avatarPreview ,
+.coverPreview{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.signUpButton{
+   
+        cursor: pointer;
+        padding: 4px 10px;
+        font-size: 16px;
+        border-radius: 20px;
+        background-color: #0866fd;
+        box-shadow: none;
+        border: none;
+        color: white;
+    
+    
+}

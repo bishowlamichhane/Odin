@@ -1,0 +1,122 @@
+.wrapper{
+    position: relative;
+    height: 100vh;
+
+}
+
+.container{
+    position: absolute;
+    width:80% ;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .leftContent{
+    width: 35%;
+    height: 100%;
+    border-right:1px solid black ;
+    float: left;
+
+}
+
+.container .rightContent{
+    width: calc(100% - 35%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    float: left;
+    padding: 20px 0;
+}
+
+.rightContent .heading{
+    font-size: 30px;
+    font-weight:400;
+}
+
+.rightContent .authButtons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 15px;
+    
+}
+
+.authButtons button{
+    padding: 5px 50px;
+    display: flex;
+    gap:15px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 19px;
+    background-color: white;
+
+    border: 1px solid black;
+
+}
+
+
+.authFormDiv{
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: start;
+}
+.authForm{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+    font-size: 20px;
+}
+.authForm input{
+    border:0.1px osolid black;
+    border-radius: 10px;
+    padding: 6px ;
+
+
+}
+
+.loginButton{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+    
+}
+.loginButton button {
+    cursor: pointer;
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #0866fd;
+    box-shadow: none;
+    border: none;
+    color: white;
+}
+
+.createOne{
+    display: flex;
+    width: 72%;
+
+    gap: 5px;
+    justify-content: start;
+}
+
+.createOne span{
+    color: #0866fd;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
